@@ -13,6 +13,17 @@ Soporta YouTube, Facebook, Instagram, X (Twitter) y TikTok.
 
 Proyecto Ola Digital · Flet 0.84 / Python 3.12
 
+## ⚠️ Compatibilidad
+
+**Plataformas soportadas:**
+- ✅ **Windows** (7 en adelante)
+- ✅ **Linux** (distribuciones basadas en Debian/Red Hat)
+- ❌ **macOS** (no probado)
+- ❌ **Android/iOS** (no compatible — es un programa de escritorio)
+
+> **Nota importante:** Este es un **programa de escritorio empaquetado nativamente**. 
+> No funciona en dispositivos móviles. Solo Windows y Linux.
+
 ## Requisitos para desarrolladores
 
 ```bash
