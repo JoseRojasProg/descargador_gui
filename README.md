@@ -16,7 +16,7 @@ Proyecto Ola Digital · Flet 0.84 / Python 3.12
 ## ⚠️ Compatibilidad
 
 **Plataformas soportadas:**
-- ✅ **Windows** (7 en adelante)
+- ✅ **Windows** (10, 11)
 - ✅ **Linux** (distribuciones basadas en Debian/Red Hat)
 - ❌ **macOS** (no probado)
 - ❌ **Android/iOS** (no compatible — es un programa de escritorio)
