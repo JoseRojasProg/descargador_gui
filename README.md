@@ -1,3 +1,17 @@
+<!-- BANNER DE PROMOCIÓN DEL CANAL -->
+> ### 🌊 ¡Únete a nuestro canal de Telegram!
+> **Proyecto Ola Digital** es una iniciativa para potenciar el aprendizaje técnico y el software libre.
+> 📢 **[¡Haz clic aquí para unirte al Canal de Telegram!](https://t.me/ProyectoOlaDigital)**
+> 📦 *Descarga los ejecutables portátiles listos para usar en Windows y Linux sin necesidad de compilar código ni instalar dependencias.*
+
+---
+
+# Descargador de Videos — GUI
+
+Descargador de videos con interfaz gráfica para **Windows y Linux**. Soporta YouTube, Facebook, Instagram, X (Twitter) y TikTok.
+Proyecto Ola Digital - Flet 0.84 / Python 3.12
+
+
 # Descargador de Videos — GUI
 
 Descargador de videos con interfaz gráfica para **Windows y Linux**.
