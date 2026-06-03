@@ -13,16 +13,33 @@ Soporta YouTube, Facebook, Instagram, X (Twitter) y TikTok.
 
 Proyecto Ola Digital · Flet 0.84 / Python 3.12
 
-## ⚠️ Compatibilidad
+## ⚠️ Compatibilidad y Arquitecturas
 
-**Plataformas soportadas:**
-- ✅ **Windows** (10, 11)
-- ✅ **Linux** (distribuciones basadas en Debian/Red Hat)
-- ❌ **macOS** (no probado)
-- ❌ **Android/iOS** (no compatible — es un programa de escritorio)
+**Plataformas y versiones soportadas:**
+
+| Sistema Operativo | Arquitectura | Nombre del Archivo | Estado |
+|---|---|---|---|
+| **Windows** | 64 bits | `DescargadorVideos_v1.0.1_Windows_64Bits.zip` | ✅ Soportado |
+| **Linux** | 64 bits | `DescargadorVideos_v1.0.1_Linux_64Bits.zip` | ✅ Soportado |
+| **Linux** | 32 bits | `DescargadorVideos_v1.0.1_Linux_32Bits.zip` | ✅ Soportado |
+| **macOS** | Intel/Apple Silicon | - | ❌ No probado |
+| **Android/iOS** | - | - | ❌ No compatible — es un programa de escritorio |
 
 > **Nota importante:** Este es un **programa de escritorio empaquetado nativamente**. 
 > No funciona en dispositivos móviles. Solo Windows y Linux.
+
+### ¿Cómo saber tu arquitectura?
+
+**Windows:**
+- Abre `Configuración → Sistema → Acerca de`
+- Busca "Tipo de sistema" → Si dice "x64" descarga la versión 64 bits
+
+**Linux:**
+```bash
+uname -m
+# x86_64 = 64 bits
+# i686 = 32 bits
+```
 
 ## Requisitos para desarrolladores
 
@@ -53,10 +70,30 @@ Comprime esa carpeta en `.zip` para distribuir.
 
 1. Crear repositorio en GitHub
 2. Subir el código fuente (`main.py`, `empaquetar.py`, `README.md`)
-3. Generar el ejecutable en Windows y en Linux
+3. Generar el ejecutable en Windows (64 bits) y en Linux (64 bits y 32 bits)
 4. Ir a **Releases → New release**
-5. Subir los dos `.zip` como assets de la release
-6. El usuario descarga, descomprime y ejecuta — **sin instalar Python**
+5. Subir los tres `.zip` con nombres estandarizados:
+   - `DescargadorVideos_v{VERSION}_Windows_64Bits.zip`
+   - `DescargadorVideos_v{VERSION}_Linux_64Bits.zip`
+   - `DescargadorVideos_v{VERSION}_Linux_32Bits.zip`
+6. El usuario descarga según su sistema, descomprime y ejecuta — **sin instalar Python**
+
+## Descarga e Instalación
+
+### Para Windows (64 bits):
+1. Descarga `DescargadorVideos_v1.0.1_Windows_64Bits.zip`
+2. Descomprime en una carpeta
+3. Doble clic en `DescargadorVideos.exe`
+4. ✅ ¡Listo! No necesita instalación
+
+### Para Linux (64 bits o 32 bits):
+1. Descarga según tu arquitectura:
+   - 64 bits: `DescargadorVideos_v1.0.1_Linux_64Bits.zip`
+   - 32 bits: `DescargadorVideos_v1.0.1_Linux_32Bits.zip`
+2. Descomprime: `unzip DescargadorVideos_v1.0.1_Linux_64Bits.zip`
+3. Dale permisos: `chmod +x DescargadorVideos`
+4. Ejecuta: `./DescargadorVideos`
+5. ✅ ¡Listo!
 
 ## Modos de descarga
 
@@ -90,7 +127,7 @@ descargador_gui/
 Una vez generado el `.zip`:
 1. Súbelo a GitHub Releases (enlace directo de descarga)
 2. Comparte el enlace de la release por WhatsApp
-3. El usuario descarga, descomprime, doble clic en el `.exe`
+3. El usuario descarga según su sistema, descomprime, ejecuta
 
 > El `.zip` de Windows suele pesar entre 40-80 MB por las dependencias de Flet.
 > Demasiado grande para enviar directamente por WhatsApp — el enlace de GitHub
